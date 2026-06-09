@@ -30,7 +30,7 @@ retail-sales-sql/
 └── README.md
 
 # Queries overview
-1. Average and total turnover
+1. Basic summary grouped by series
 Total turnover, average turnover, and month count grouped by series. Useful for identifying which retail series contributes the most revenue over time.
 2. Compare to prior year
 Calculate the percentage change in turnover compared to the same month in the prior year. Built using a self-join on series_id and a 12-month date interval.

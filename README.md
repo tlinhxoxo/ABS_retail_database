@@ -38,7 +38,7 @@ Calculate the percentage change in turnover compared to the same month in the pr
 Rank the highest turnover months within each series by using LEFT JOIN where each row is compared against peers with a higher turnover value, and filtered to rows with fewer than 3 competitors.
 4. Turnover each year
 Reshape the data from long format (one row per series per month) into wide format (one row per year, each series as its own column). Use conditional aggregation with CASE WHEN inside SUM() to simulate a pivot table, which is useful for presenting multi-series comparisons in a single stakeholder-ready table.
-5. Monthly change anomalities
+5. Monthly change anomalies
 Order months where turnover dropped by more than 20% compared to the prior month. Uses a self-join on a 1-month date interval to bring in the previous month's value, then filters on the percentage change threshold.
 
 # How to Run
